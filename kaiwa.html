@@ -9,10 +9,18 @@
 
 <body>
 
-<p>会話しましょう。何か言ってください。</p>
-<strong>「</strong><input type="text" id="tx1" size=50><strong>」</strong>
-<br><br>
-<button onclick="">送信</button>
+<form id="kaiwa">
+<!--　選択肢　-->
+<input type="button" value="こんにちは" onClick="goScript(0)">
+<input type="button" value="こんばんは" onClick="goScript(1)"><br><br>
+
+<!--　自由文　-->
+<input type="text" id="kaiwatext" value=""><br>
+<input type="button" value="送信" onClick="onButtonClick()">
+</form>
+<hr/>
+<p>返答</p>
+<div id="output"></div>
 
 </body>
 </html>
