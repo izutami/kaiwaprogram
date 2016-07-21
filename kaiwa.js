@@ -31,8 +31,14 @@ function onButtonClick() {
 		/*
 		 * 指定した文字列が存在する位置を検索する
 		 */
-		if(str.indexOf("こんにちは")!=-1 || str.indexOf("こんばんは")!=-1){
+		if(str.indexOf("こんにちは")!=-1 || str.indexOf("こんばんは")!=-1 || str.indexOf("おはよう")!=-1){
 				document.write("Hello");
+		}else if(str.indexOf("ありがとう")!=-1){
+			document.write("どういたしまして");
+		}else if(str.indexOf("さようなら")!=-1 || str.indexOf("さよなら")!=-1){
+			document.write("さようなら");
+		}else if(str.indexOf("ごめん")!=-1){
+			document.write("こちらこそごめんなさい");
 		}else{
 			document.write("わかりません");
 		}
