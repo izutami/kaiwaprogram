@@ -39,6 +39,8 @@ function onButtonClick() {
 			document.write("さようなら");
 		}else if(str.indexOf("ごめん")!=-1){
 			document.write("こちらこそごめんなさい");
+		}else if(str.indexOf("おめでとう")!=-1){
+			document.write("どうもありがとう");
 		}else{
 			document.write("わかりません");
 		}
